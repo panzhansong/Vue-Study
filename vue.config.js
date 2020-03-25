@@ -12,8 +12,8 @@ module.exports = {
         .set('@', resolve('src'))
         .set('_c', resolve('src/components'))
     },
-    // 打包时不生成.map文件
-    productionSourceMap: false,
+    // // 打包时不生成.map文件
+    // productionSourceMap: false,
     devServer: {
         proxy: 'http://localhost:3000'
     }
