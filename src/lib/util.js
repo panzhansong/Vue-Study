@@ -16,7 +16,7 @@ export const setTitle = (title) => {
  * @param {*} tokenName  定义cookies上面属性名称
  * @param {*} token  定义cookies上面属性值
  */
-const setToken = (tokenName = 'token', token) => {
+export const setToken = (tokenName = 'token', token) => {
   Cookies.set(tokenName,token)
 }
 
@@ -24,11 +24,7 @@ const setToken = (tokenName = 'token', token) => {
  * 获取cookies上面的token
  * @param {*} tokenName 定义cookies上面属性名称
  */
-const getToken = (tokenName = 'token') => {
+export const getToken = (tokenName = 'token') => {
   return Cookies.get(tokenName)
 }
 
-export default {
-  setToken,
-  getToken
-}
